@@ -4,6 +4,6 @@ from articles import views
 
 urlpatterns = [
     
-    path('', views.articleAPI, name="index"),
-    path('<int:article_id>/', views.articledetailAPI, name="article_view"),
+    path('', views.ArtcleList.as_view(), name="index"),
+    path('<int:article_id>/', views.ArticletDetail.as_view(), name="article_view"),
 ]
